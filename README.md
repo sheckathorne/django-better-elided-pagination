@@ -1,4 +1,3 @@
-=====
 Better Elided Pagination
 =====
 
