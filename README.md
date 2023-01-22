@@ -5,10 +5,8 @@ Better Elided Pagination extends the Django Pagination class to provide elided p
 The following illustrates the difference between Django's built in elided pagination and this project's "better" elided pagination:<br>
 ![Alt text](/screenshots/comparison.png?raw=true "Title")
 
-Compatible with Django **3.0+**
-
-If using Tailwind CSS, however no CSS framework is required:<br>
-Compatible with Tailwind **1.9.6+**
+Compatible with Django **3.0+**<br>
+Compatible with Tailwind **1.9.6+** if using Tailwind CSS
 
 ## Installation
 
