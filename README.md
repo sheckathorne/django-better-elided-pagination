@@ -33,7 +33,7 @@ def some_view(request):
   pagination = BetterElidedPaginator(
       request,
       items,
-      3, # items per page
+      3,  # items per page
   )
 
   elided_list = pagination.get_elided_page_range()
@@ -69,7 +69,7 @@ def homepage(request):
     pagination = BetterElidedPaginator(
         request,
         items,
-        3, # items per page
+        3,  # items per page
     )
 
     return render(request=request,
