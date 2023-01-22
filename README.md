@@ -2,8 +2,8 @@
 
 Better Elided Pagination extends the Django Pagination class to provide elided pagination (pagination with ellipses) that does not change lengths when the selected page is near the start or end of the list. The list of pagination nodes will have a predictable and fixed length when the number of nodes exceeds the desired length of the node list.
 
-The following illustrates the difference between Django's built in elided pagination and this project's "better" elided pagination:
-**screenshots here**
+The following illustrates the difference between Django's built in elided pagination and this project's "better" elided pagination:<br>
+![Alt text](/screenshots/comparison.png?raw=true "Title")
 
 Compatible with Django **3.0+**
 
