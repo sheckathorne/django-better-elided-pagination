@@ -36,7 +36,7 @@ def some_view(request):
 
   elided_list = pagination.get_elided_page_range()
 ```
-.get_elided_page_range() will return a genrator fuction that you can comprehend into a list, or loop over to view the nodes
+.get_elided_page_range() will return a generator fuction that you can comprehend into a list, or loop over to view the nodes
 ```
 print([p for p in elided_list])
 ```
