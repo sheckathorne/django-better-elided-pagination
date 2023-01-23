@@ -1,3 +1,4 @@
 build
 dist
 django_better_elided_pagination.egg-info
+build_proj.sh
