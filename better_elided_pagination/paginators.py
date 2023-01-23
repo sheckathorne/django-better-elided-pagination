@@ -165,9 +165,9 @@ class BetterElidedPaginator(Paginator):
             current_url = remove_page_from_url(self.request.get_full_path())
 
             pagination_html = tailwind_pagination(
-                page_list,
-                self.current_page_num,
-                self.num_pages,
+                pagination_list=page_list,
+                current_page_num=self.current_page_num,
+                page_count=self.num_pages,
                 current_url=current_url,
                 next_and_prev_buttons=self.next_and_prev_buttons,
                 css_classes=self.css_classes,
@@ -188,7 +188,8 @@ def remove_page_from_url(full_path):
 def tailwind_pagination(
         pagination_list=None,
         current_page_num=None,
-        page_count=None, current_url="",
+        page_count=None,
+        current_url="",
         next_and_prev_buttons=True,
         next_button="&raquo;",
         prev_button="&laquo;",
