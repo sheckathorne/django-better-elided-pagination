@@ -21,7 +21,7 @@ pip install django-better-elided-pagination
 
 
 ## Usage
-The complete example in the next section assumes you are using Tailwind CSS in your project. The html_list property will generate a list of HTML nodes styled using Tailwind CSS classes. If you prefer to style the pagination items yourself, you can simply use:
+The complete example in the next section assumes you are using Tailwind CSS in your project. The html_list property will generate a list of HTML nodes styled using Tailwind CSS classes. If you prefer to style the pagination nodes yourself, you may simply use:
 ```
 from better_elided_pagination.paginators import BetterElidedPaginator
 
@@ -36,7 +36,7 @@ def some_view(request):
 
   elided_list = pagination.get_elided_page_range()
 ```
-.get_elided_page_range() will return a generator fuction that you can comprehend into a list, or you can loop over to view the nodes
+.get_elided_page_range() will return a generator fuction that you can comprehend into a list, or you can loop over to view the nodes:
 ```
 print([p for p in elided_list])
 ```
