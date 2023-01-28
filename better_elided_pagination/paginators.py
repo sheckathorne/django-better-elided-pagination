@@ -104,7 +104,6 @@ class BetterElidedPaginator(Paginator):
         if current_page_num > (1 + pages_on_each_side + pages_on_ends) + 1:
             if display_item_range:
                 for num in range(1, pages_on_ends + 1):
-                    print(range_string(num, items_per_page))
                     yield num, range_string(num, items_per_page)
                 yield self.ELLIPSIS, self.ELLIPSIS
                 for num in range(current_page_num - pages_on_each_side - right_nodes_to_add, current_page_num + 1):
