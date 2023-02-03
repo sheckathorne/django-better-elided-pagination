@@ -1,6 +1,12 @@
 # Better Elided Pagination
 
-Better Elided Pagination extends the Django Pagination class to provide elided pagination (pagination with ellipses) that does not change lengths when the selected page is near the start or end of the list. The list of pagination nodes will have a predictable and fixed length when the number of nodes exceeds the desired length of the node list.
+*What? Why?*
+
+The default Django elided pagination (pagination with ellipses) varies in width depending on which page node you have selected. When navigating between page 1 and page 2, the default pagination will increase in width by one node and shift the placement of all nodes to the right. The pagination element will reach a fixed size near the middle of the page set and then start to decrease in width when approaching the end of the set.
+
+This problem is most apparent when clicking the "next" button to traverse the pagination element - with each click of the "next" button, the placement of this button moves to the right, causing the user to re-aim the mouse pointer to click again.
+
+Better Elided Pagination extends the Django Pagination class to provide elided pagination  that does not vary in width when the selected page is near the start or end of the list. The list of pagination nodes will have a predictable and fixed length when the number of nodes exceeds the desired length of the node list.
 
 The following illustrates the difference between Django's built in elided pagination and this project's "better" elided pagination:<br>
 
